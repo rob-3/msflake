@@ -49,3 +49,5 @@
 	defaultRemote = origin
 [stash]
 	showPatch = true
+[credential]
+	helper = store
