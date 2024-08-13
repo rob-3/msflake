@@ -14,6 +14,7 @@ nix run nixpkgs#git -- clone https://github.com/rob-3/msflake
 mkdir -p ~/.config/nvim
 echo 'require("rob-3")' > ~/.config/nvim/init.lua
 cp -r ~/dotfiles/lua ~/.config/nvim/
+touch ~/.config/nvim/secrets.lua
 
 # Set up nix profile
 mkdir ~/msflake
