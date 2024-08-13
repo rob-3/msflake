@@ -1,0 +1,51 @@
+[user]
+	name = Robert Boyd III
+	email = rrob@microsoft.com
+[mergetool]
+	keepBackup = false
+	path = nvim
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+	algorithm = histogram
+[difftool]
+	prompt = false
+[fetch]
+	fsckObjects = true
+[transfer]
+	fsckObjects = true
+[recieve]
+	fsckObjects = true
+[commit]
+	verbose = true
+[alias]
+	#co = checkout
+	sw = switch
+	a = add
+	c = commit
+	#m = merge
+	s = status
+	#l = log --oneline --graph --decorate
+	l = log --graph --pretty=format:'%C(auto)%h%d %w(100,0,8)%s %C(dim)(%ar by %aN)%Creset'
+	#b = branch
+	ca = commit --amend
+	st = stash
+	diffw = diff --word-diff=color
+[rerere]
+	enabled = true
+[pull]
+	ff = only
+[core]
+	editor = nvim
+	ignorecase = false
+	excludesFile = /Users/rob/.gitignore
+	attributesFile = /Users/rob/.gitattributes
+	autocrlf = true
+	safecrlf = true
+[init]
+	defaultBranch = main
+[checkout]
+	defaultRemote = origin
+[stash]
+	showPatch = true
