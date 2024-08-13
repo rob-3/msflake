@@ -18,13 +18,11 @@
           curl
           sqlite-interactive
           ripgrep
-          kitty
           nodejs_latest
           fzf
           rlwrap
           fd
           ffmpeg
-          cloudflared
           sqlite-analyzer
           clojure
           jq
@@ -51,40 +49,15 @@
           python3Full
           gcc
           gnupg
-          devbox
           direnv
-          ruff-lsp
-          restic
-          pure-prompt
-          keepassxc
           unzip
+          cargo
         ];
-        other = 
-          if system == "x86_64-linux" then
-            with pkgs; [
-              #firefox
-              #chromium
-              #nixgl.packages.${system}.default
-              #wmenu
-              #wdisplays
-              #wl-clipboard
-              #coreutils
-            ]
-          else if system == "aarch64-darwin" then 
-            with pkgs; [
-              uutils-coreutils-noprefix
-              rectangle
-              pinentry_mac
-              colima
-              docker
-              textliveFull
-            ]
-          else [];
       in 
         { 
         packages.default = pkgs.buildEnv {
           name = "development-stuff";
-          paths = robsPackages ++ other;
+          paths = robsPackages;
         };
       }
     );
