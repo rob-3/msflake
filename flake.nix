@@ -6,10 +6,9 @@
     nix-search-github.url = "github:peterldowns/nix-search-cli";
     nix-search-github.inputs.nixpkgs.follows = "nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
-    nixgl.url = "github:guibou/nixGL";
   };
 
-  outputs = { nix-search-github, nixpkgs, flake-utils, nixgl, ... }:
+  outputs = { nix-search-github, nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let 
         pkgs = nixpkgs.legacyPackages.${system};
