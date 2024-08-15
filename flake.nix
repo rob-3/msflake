@@ -51,6 +51,7 @@
           direnv
           unzip
           cargo
+          tmux
         ];
       in 
         { 
