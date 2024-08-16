@@ -17,9 +17,7 @@ cp -r ~/dotfiles/lua ~/.config/nvim/
 touch ~/.config/nvim/lua/rob-3/secrets.lua
 
 # Set up nix profile
-mkdir ~/msflake
-
-cd ~/msflake
+cd ~/msflake || exit
 nix profile install .
 
 # Set up git config
