@@ -15,43 +15,25 @@
         robsPackages = with pkgs; [
           neovim
           curl
-          sqlite-interactive
           ripgrep
-          nodejs_latest
           fzf
-          rlwrap
           fd
-          ffmpeg
-          sqlite-analyzer
-          clojure
           jq
           gnugrep
           units
-          luajit_openresty
-          nmap
-          wrk
           watchexec
           wget
           difftastic
-          pandoc
-          openssh
-          imagemagick
           htop
           bat
-          babashka
-          rsync
-          go_1_22
-          gh
           git
           shellcheck
           nix-search-github.packages.${system}.default
-          python3Full
-          gcc
-          gnupg
           direnv
           unzip
           cargo
           tmux
+          powershell
         ];
       in 
         { 
