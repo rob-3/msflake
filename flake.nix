@@ -34,6 +34,7 @@
           cargo
           tmux
           powershell
+          gcc
         ];
       in 
         { 
