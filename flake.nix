@@ -35,6 +35,7 @@
           tmux
           powershell
           gcc
+          fish
         ];
       in 
         { 
