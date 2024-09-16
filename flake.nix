@@ -36,6 +36,9 @@
           powershell
           gcc
           fish
+          nodejs_22
+          babashka
+          clojure
         ];
       in 
         { 
