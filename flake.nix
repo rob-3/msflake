@@ -39,6 +39,7 @@
           nodejs_22
           babashka
           clojure
+          glow
         ];
       in 
         { 
