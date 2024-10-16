@@ -40,6 +40,7 @@
           babashka
           clojure
           glow
+          wezterm
         ];
       in 
         { 
