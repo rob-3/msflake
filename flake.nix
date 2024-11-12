@@ -41,6 +41,7 @@
           clojure
           glow
           wezterm
+          rlwrap
         ];
       in 
         { 
