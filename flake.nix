@@ -42,6 +42,7 @@
           glow
           wezterm
           rlwrap
+          tree
         ];
       in 
         { 
