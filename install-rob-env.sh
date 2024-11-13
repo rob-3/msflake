@@ -7,9 +7,6 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 # clone dotfiles
 nix run nixpkgs#git -- clone https://github.com/rob-3/dotfiles
 
-# clone flake
-nix run nixpkgs#git -- clone https://github.com/rob-3/msflake
-
 # Set up nix profile
 cd ~/msflake || exit
 nix profile install .
